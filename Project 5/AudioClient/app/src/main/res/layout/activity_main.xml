@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/stopService"
+        android:layout_width="113dp"
+        android:layout_height="56dp"
+        android:text="Stop the Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#80DEEA"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="188dp"
+        android:layout_height="84dp"
+        android:background="#80DEEA"
+        android:text="Start the Service / Bind to the Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="36dp"
+        android:text="Welcome to the Music Application"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayMsg"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startService"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/songslistview"
+        android:layout_width="370dp"
+        android:layout_height="243dp"
+        android:background="#F9FBE7"
+        app:layout_constraintBottom_toTopOf="@+id/stopService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
